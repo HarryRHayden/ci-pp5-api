@@ -1,4 +1,4 @@
-from rest_framework import status
+from rest_framework import status, permissions
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Post
@@ -9,7 +9,9 @@ from drf_api.permissions import IsOwnerOrReadOnly
 # Create your views here.
 class PostList(APIView):
     serializer_class = PostSerializer
-    permission_classes = [IsOwnerOrReadOnly]
+    permission_classes = [
+        permissions.IsAuthenticatedOrReadOnly
+    ]
 
     def get(self, request):
         posts = Post.objects.all()
