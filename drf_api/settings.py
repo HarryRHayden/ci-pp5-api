@@ -56,16 +56,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'cloudinary_storage',
-    'rest_framework.authtoken',
+    'django.contrib.staticfiles',
     'cloudinary',
     'rest_framework',
-    'dj_rest_auth',
-    'django.contrib.staticfiles',
-    'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'dj_rest_auth.registration',
+
     'profiles',
     'posts',
 ]
