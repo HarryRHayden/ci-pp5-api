@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'likes',
     'profiles',
     'posts',
+    'followers',
 ]
 SITE_ID = 1
 REST_FRAMEWORK = {
