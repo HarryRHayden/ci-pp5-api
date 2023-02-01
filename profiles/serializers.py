@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import Profile
 
 
-#Serializer takend and modified from walkthrough project
+# Serializer takend and modified from walkthrough project
 class ProfileSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
 
