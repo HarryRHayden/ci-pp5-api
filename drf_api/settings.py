@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'rest_framework.authtoken',
     'cloudinary',
+    'rest_framework',
     'dj_rest_auth',
     'django.contrib.staticfiles',
     'django.contrib.sites',
