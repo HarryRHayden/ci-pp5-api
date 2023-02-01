@@ -4,12 +4,12 @@ from django.contrib.auth.models import User
 
 
 # Create your models here.
-class Profile(models.model):
+class Profile(models.Model):
     PIZZA_MAKER = 'Pizza Maker'
     PIZZA_EATER = 'Pizza Eater'
     PIZZA_MAKER_OR_PIZZA_EATER_CHOICES = [
-        {PIZZA_EATER, 'Pizza Eater'},
-        {PIZZA_MAKER, 'Pizza Maker'},
+        (PIZZA_EATER, 'Pizza Eater'),
+        (PIZZA_MAKER, 'Pizza Maker'),
     ]
     owner = models.OneToOneField(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)

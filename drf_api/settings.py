@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage',
     'rest_framework.authtoken',
+    'cloudinary',
     'dj_rest_auth',
     'django.contrib.staticfiles',
     'django.contrib.sites',
@@ -64,7 +65,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'dj_rest_auth.registration',
-    'cloudinary',
+    'profiles',
 ]
 SITE_ID = 1
 REST_FRAMEWORK = {
