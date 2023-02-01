@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'dj_rest_auth.registration',
     'profiles',
+    'posts',
 ]
 SITE_ID = 1
 REST_FRAMEWORK = {
