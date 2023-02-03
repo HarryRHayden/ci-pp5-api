@@ -24,7 +24,7 @@ class Profile(models.Model):
         default=PIZZA_EATER
     )
     image = models.ImageField(
-        upload_to='images/', default='../profile-icon_pqik1e.png'
+        upload_to='images/', default='../profile-icon_pqik1e'
     )
     favourite_pizza = models.CharField(
         max_length=25, default="Margherita", blank=True
